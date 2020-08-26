@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="StackLayoutForm.MainPage">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0" Padding="0" BackgroundColor="Maroon">
+                <BoxView Color="Gray" HorizontalOptions="FillAndExpand"
+                         HeightRequest="100" VerticalOptions="Start"></BoxView>
+
+                <Button CornerRadius="40" HeightRequest="80" WidthRequest="80"
+                        BackgroundColor="Red" HorizontalOptions="Center"
+                        VerticalOptions="Start" TranslationY="-20">
+                    
+                </Button>
+                <StackLayout HeightRequest="100" VerticalOptions="Start"
+                             HorizontalOptions="FillAndExpand" Spacing="20"
+                             BackgroundColor="Maroon">
+
+                    <Label Text="User Name" FontSize="28" FontAttributes="Bold"
+                           HorizontalOptions="Center" VerticalOptions="Center"
+                           TextColor="White"></Label>
+
+                    <Entry Placeholder="Bio + Hashtag" TextColor="White"
+                           PlaceholderColor="White"
+                           HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                    
+                </StackLayout>
+
+                <StackLayout BackgroundColor="White" HeightRequest="50" Padding="5"
+                             Orientation="Horizontal">
+
+                    <StackLayout Spacing="0" Orientation="Horizontal"
+                                 HorizontalOptions="Start">
+
+                        <BoxView BackgroundColor="Black"
+                                 WidthRequest="40" HeightRequest="40" HorizontalOptions="StartAndExpand"
+                                 VerticalOptions="Center"></BoxView>
+
+                        <Label Text="Accent Color" FontSize="14" TextColor="Black"
+                               HorizontalOptions="StartAndExpand"
+                               VerticalOptions="Center" Margin="10,0,0,0"></Label>
+                        
+                    </StackLayout>
+                    
+                </StackLayout>
+                
+                
+            </StackLayout>
+            
+        </ScrollView>
+        
+    </ContentPage.Content>
+
+</ContentPage>
