@@ -46,9 +46,56 @@
                                VerticalOptions="Center" Margin="10,0,0,0"></Label>
                         
                     </StackLayout>
+
+                    <StackLayout Spacing="0" Orientation="Horizontal"
+                                 HorizontalOptions="EndAndExpand">
+
+                        <BoxView BackgroundColor="Maroon"
+                                 WidthRequest="40" HeightRequest="40" HorizontalOptions="Start"
+                                 VerticalOptions="Center"></BoxView>
+
+                        <Label FontSize="14" TextColor="Black" Text="Primary Color"
+                               VerticalOptions="Center" Margin="10,0,0,0"></Label>
+                        
+                    </StackLayout>
                     
                 </StackLayout>
-                
+
+                <StackLayout Orientation="Vertical" Margin="15">
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label TextColor="White" Text="Age:" VerticalOptions="Center"
+                           HorizontalOptions="Start" WidthRequest="100"></Label>
+
+                        <Entry HorizontalOptions="FillAndExpand"
+                               TextColor="White" Text="40"></Entry>
+                        
+                    </StackLayout>
+
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label TextColor="White" Text="Interest:" VerticalOptions="Center"
+                           HorizontalOptions="Start" WidthRequest="100"></Label>
+
+                        <Entry HorizontalOptions="FillAndExpand"
+                               TextColor="White" Text="Xamarin"></Entry>
+
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label TextColor="White" Text="Ask me about:" VerticalOptions="Center"
+                           HorizontalOptions="Start" WidthRequest="100"></Label>
+
+                        <Entry HorizontalOptions="FillAndExpand" 
+                               TextColor="White" Text=".Net - Microsoft - Mobile"></Entry>
+
+                    </StackLayout>
+                    
+                </StackLayout>
+
+                <StackLayout VerticalOptions="EndAndExpand" Margin="15">
+                    <Button BackgroundColor="White" Text="Registrar Datos" FontSize="14" CornerRadius="20"></Button>
+                </StackLayout>
                 
             </StackLayout>
             

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SNGridLayout.Views.Home">
+    <ContentPage.Content>
+
+        <ScrollView>
+
+            <Grid ColumnSpacing="0" RowSpacing="0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="AUTO"></RowDefinition>
+                    <RowDefinition Height="AUTO"></RowDefinition>
+                    <RowDefinition Height="AUTO"></RowDefinition>
+                    <RowDefinition Height="AUTO"></RowDefinition>
+                    <RowDefinition Height="AUTO"></RowDefinition>
+                </Grid.RowDefinitions>
+                
+                <!--Header BackGround-->
+                <Image Aspect="AspectFill" Source="HeaderBackground.png"></Image>
+                <Image Aspect="Fill" Margin="0,-1,0,-1" VerticalOptions="End" Source="CurvedMask.png"></Image>
+                
+                <!--Imagen de Perfil-->
+
+                <!--Perfil Name-->
+                <StackLayout Grid.Row="1" HorizontalOptions="Center" Padding="0,50,0,0">
+
+                    <Label Text="Marla" HorizontalOptions="Center" FontSize="50" 
+                           FontFamily="FontApp"></Label>
+                    <Label Text="Hipster Coffee Drinker" Style="{StaticResource ProfileTagLabel}"></Label>
+                </StackLayout>
+
+            </Grid>
+            
+        </ScrollView>
+        
+        
+    </ContentPage.Content>
+</ContentPage>
