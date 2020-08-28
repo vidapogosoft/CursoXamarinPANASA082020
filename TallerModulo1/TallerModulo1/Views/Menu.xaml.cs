@@ -43,6 +43,17 @@ namespace TallerModulo1.Views
 
         }
 
+        private void ListMenu_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var menu = e.SelectedItem as MenuLateral;
 
+            if (menu != null)
+            {
+                IsPresented = false;
+
+                Detail = new NavigationPage(menu.Page);
+            }
+
+        }
     }
 }

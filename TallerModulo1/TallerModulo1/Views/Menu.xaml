@@ -11,7 +11,7 @@
 
         <ContentPage Title="Menu">
 
-            <ListView Background="White" x:Name="ListMenu">
+            <ListView Background="White" x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ImageCell Height="25"

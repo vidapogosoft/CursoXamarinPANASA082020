@@ -7,10 +7,56 @@
              x:Class="TallerModulo1.Views.Home"
              Title="Home">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+
+        <ScrollView>
+            <StackLayout Orientation="Vertical" Spacing="5" Margin="5">
+                
+                <StackLayout VerticalOptions="Start" Orientation="Horizontal" Spacing="10">
+                    <Label Text="Bienvenido" FontAttributes="Bold" FontSize="15"></Label>
+                    <Label Text="Victor" FontSize="15"></Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" Margin="0,10,0,0">
+
+                    <Label Text="Locales Afiliados" FontAttributes="Bold" FontSize="15"></Label>
+
+                    <CollectionView x:Name="CLLocales" SelectionMode="Single" HeightRequest="250">
+
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Horizontal" ItemSpacing="0"></LinearItemsLayout>
+                        </CollectionView.ItemsLayout>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+
+                                <StackLayout Spacing="0">
+                                    <Frame CornerRadius="10" HasShadow="True">
+
+                                        <StackLayout>
+                                            <Image HeightRequest="200" WidthRequest="200"
+                                                   Source="{Binding ImageUrl}"></Image>
+                                            <Label FontAttributes="Bold" FontSize="15"
+                                                   Text="{Binding NombreLocalAfiliado}"></Label>                                            
+                                        </StackLayout>
+
+                                    </Frame>
+                                </StackLayout>
+                                
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                        
+                        
+                    </CollectionView>
+                    
+                    
+                </StackLayout>
+                
+                
+                
+            </StackLayout>
+        </ScrollView>
+        
+        
+        
     </ContentPage.Content>
 </ContentPage>
