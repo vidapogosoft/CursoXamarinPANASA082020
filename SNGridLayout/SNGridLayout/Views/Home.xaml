@@ -8,7 +8,6 @@
     <ContentPage.Content>
 
         <ScrollView>
-
             <Grid ColumnSpacing="0" RowSpacing="0">
 
                 <Grid.RowDefinitions>
@@ -24,7 +23,11 @@
                 <Image Aspect="Fill" Margin="0,-1,0,-1" VerticalOptions="End" Source="CurvedMask.png"></Image>
                 
                 <!--Imagen de Perfil-->
-
+                <Image Source="ProfilePic.png" HeightRequest="100" WidthRequest="100"
+                       HorizontalOptions="Center" VerticalOptions="End"
+                       TranslationY="50"></Image>
+                
+                
                 <!--Perfil Name-->
                 <StackLayout Grid.Row="1" HorizontalOptions="Center" Padding="0,50,0,0">
 
@@ -33,6 +36,39 @@
                     <Label Text="Hipster Coffee Drinker" Style="{StaticResource ProfileTagLabel}"></Label>
                 </StackLayout>
 
+                <!--Social Network Status-->
+
+                <Grid Grid.Row="2" Margin="0,30" ColumnSpacing="0" RowSpacing="0">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout>
+                        <Label Text="33" Style="{StaticResource StatsNumberLabel}"></Label>
+                        <Label Text="Likes" Style="{StaticResource StatsCpationLabel}"></Label>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1">
+                        <Label Text="94" Style="{StaticResource StatsNumberLabel}"></Label>
+                        <Label Text="Following" Style="{StaticResource StatsCpationLabel}"></Label>
+                    </StackLayout>
+
+
+                    <StackLayout Grid.Column="2">
+                        <Label Text="957" Style="{StaticResource StatsNumberLabel}"></Label>
+                        <Label Text="Followers" Style="{StaticResource StatsCpationLabel}"></Label>
+                    </StackLayout>
+
+                </Grid>
+
+                <Label Grid.Row="3" Margin="20,0" Style="{StaticResource MainBodyLabel}"
+                       Text="Curso de Xamarin Forms dictado en la compañia PANASA ciudad de Guayaquil"></Label>
+
+                <Button Grid.Row="4" Margin="20" Style="{StaticResource FollowButton}" Text="Follow"></Button>
+                
             </Grid>
             
         </ScrollView>

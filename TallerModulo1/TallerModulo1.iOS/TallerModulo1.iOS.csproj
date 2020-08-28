@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3B58AFA9-A234-49DB-B75D-11AB5A02475F}</ProjectGuid>
+    <ProjectGuid>{6B4CB724-E6CB-45E0-865F-4672C1A4634A}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HolaMundo.iOS</RootNamespace>
+    <RootNamespace>TallerModulo1.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>HolaMundo.iOS</AssemblyName>
+    <AssemblyName>TallerModulo1.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <ProvisioningType>automatic</ProvisioningType>
@@ -124,13 +124,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.8.0.1269" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\HolaMundo\HolaMundo.csproj">
-      <Project>{20DA1980-7A70-4F89-B789-831AB30A022F}</Project>
-      <Name>HolaMundo</Name>
+    <ProjectReference Include="..\TallerModulo1\TallerModulo1.csproj">
+      <Project>{42616C70-5ED6-43FB-B8C8-6470E1FC076F}</Project>
+      <Name>TallerModulo1</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

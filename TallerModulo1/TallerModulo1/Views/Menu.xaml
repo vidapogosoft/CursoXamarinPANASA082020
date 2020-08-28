@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TallerModulo1.Views.Menu"
+             Title="Mi APP">
+
+    <MasterDetailPage.Master>
+
+        <ContentPage Title="Menu">
+
+            <ListView Background="White" x:Name="ListMenu">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell Height="25"
+                                   Text="{Binding MenuTitle}"></ImageCell>
+                    </DataTemplate>    
+                </ListView.ItemTemplate>    
+                
+            </ListView>
+            
+        </ContentPage>
+        
+    </MasterDetailPage.Master>
+    
+</MasterDetailPage>
