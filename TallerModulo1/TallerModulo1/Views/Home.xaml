@@ -20,7 +20,8 @@
 
                     <Label Text="Locales Afiliados" FontAttributes="Bold" FontSize="15"></Label>
 
-                    <CollectionView x:Name="CLLocales" SelectionMode="Single" HeightRequest="250">
+                    <CollectionView x:Name="CLLocales" SelectionMode="Single" HeightRequest="250"
+                                    SelectionChanged="CLLocales_SelectionChanged">
 
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout Orientation="Horizontal" ItemSpacing="0"></LinearItemsLayout>
@@ -36,7 +37,11 @@
                                             <Image HeightRequest="200" WidthRequest="200"
                                                    Source="{Binding ImageUrl}"></Image>
                                             <Label FontAttributes="Bold" FontSize="15"
-                                                   Text="{Binding NombreLocalAfiliado}"></Label>                                            
+                                                   Text="{Binding NombreLocalAfiliado}"></Label>
+
+                                            <Label FontAttributes="Bold" FontSize="15" IsVisible="False"
+                                                   Text="{Binding IdLocalAfiliado}"></Label>
+                                        
                                         </StackLayout>
 
                                     </Frame>
@@ -48,6 +53,20 @@
                         
                     </CollectionView>
                     
+                    
+                </StackLayout>
+
+                <StackLayout x:Name="InfoLocal" IsVisible="false">
+
+                    <StackLayout Orientation="Vertical" VerticalOptions="Start" Spacing="0">
+
+                        <Label x:Name="TxtIdLocal" FontSize="15" FontAttributes="Bold"></Label>
+                        <Label x:Name="TxtNombreLocal" FontSize="15" FontAttributes="Bold"></Label>
+
+                        <Button x:Name="BtnProductos" Text="Ver Productos" TextColor="White" 
+                                BackgroundColor="Navy" Clicked="BtnProductos_Clicked"></Button>
+                    
+                    </StackLayout>
                     
                 </StackLayout>
                 

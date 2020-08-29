@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TallerModulo1.Views.ProductosLocal"
+             Title="Productos">
+
+    
+    <ContentPage Title="Productos">
+        <ContentPage.Content>
+            <ScrollView>
+
+                <StackLayout Orientation="Vertical" Spacing="0">
+
+
+                    <CollectionView x:Name="CLProductosLocales" SelectionMode="Single" HeightRequest="350"
+                                    >
+
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Vertical" ItemSpacing="0"></LinearItemsLayout>
+                        </CollectionView.ItemsLayout>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+
+                                <StackLayout Spacing="0">
+                                    <Frame CornerRadius="10" HasShadow="True">
+
+                                        <StackLayout Orientation="Horizontal" Spacing="15">
+
+                                            <StackLayout Orientation="Vertical">
+                                                <Image HeightRequest="200" WidthRequest="200"
+                                                   Source="{Binding ImageUrl}"></Image>
+                                            </StackLayout>
+
+                                            <StackLayout Orientation="Vertical"  Spacing="8"
+                                                         VerticalOptions="CenterAndExpand">
+
+                                                <Label FontAttributes="Bold" FontSize="15"
+                                                   Text="{Binding NombreProductoLocal}"></Label>
+
+                                                <Label FontAttributes="Bold" FontSize="15" IsVisible="False"
+                                                   Text="{Binding IdProductoLocal}"></Label>
+
+
+                                            </StackLayout>
+
+                                        </StackLayout>
+                                        
+                                        
+                                    </Frame>
+                                </StackLayout>
+
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+
+
+                    </CollectionView>
+
+
+                </StackLayout>
+                
+            </ScrollView>
+        </ContentPage.Content>
+        
+    </ContentPage>
+
+    <ContentPage Title="Descripcion">
+        <ContentPage.Content>
+            <ScrollView>
+
+            </ScrollView>
+        </ContentPage.Content>
+
+    </ContentPage>
+
+    <ContentPage Title="Tiendas">
+        <ContentPage.Content>
+            <ScrollView>
+
+            </ScrollView>
+        </ContentPage.Content>
+
+    </ContentPage>
+
+</TabbedPage>
