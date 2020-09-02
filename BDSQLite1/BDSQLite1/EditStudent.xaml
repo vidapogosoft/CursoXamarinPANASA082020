@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BDSQLite1.EditStudent"
+             Visual="Material"
+             Title="Estudiante Registrado">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame BorderColor="Black" CornerRadius="20" Margin="5">
+                <StackLayout Spacing="0">
+                    <Entry Placeholder="Ingresa tus nombres" x:Name="TxtNombres" Text="{Binding stdname}"></Entry>
+                    <Entry Placeholder="Ingresa tu curso" x:Name="TxtCurso" Text="{Binding stdcourse}"></Entry>
+                    <Entry Placeholder="Ingresa nivel de tu curso" x:Name="TxtNivel" Text="{Binding stdlevel}"></Entry>
+
+                    <StackLayout VerticalOptions="EndAndExpand" Spacing="2" Orientation="Horizontal">
+                        <Button Text="Editar" CornerRadius="30" x:Name="BtnEditar"
+                                Clicked="BtnEditar_Clicked"></Button>
+                        <Button Text="Elimnar" CornerRadius="30" x:Name="BtnDel"
+                                BackgroundColor="Red" TextColor="White"
+                                Clicked="BtnDel_Clicked"></Button>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
