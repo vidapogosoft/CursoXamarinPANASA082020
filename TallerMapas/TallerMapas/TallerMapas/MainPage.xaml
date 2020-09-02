@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Maps = "clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:local="clr-namespace:TallerMapas"
+             x:Class="TallerMapas.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Mapas en Xamarin" 
+           HorizontalOptions="Center"
+           BackgroundColor="Blue" 
+               TextColor="White"/>
+
+
+        <Maps:Map x:Name="MiMapa" HeightRequest="700" WidthRequest="400"  
+                  MapType="Street"></Maps:Map>
+        
+        
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Maps = "clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:local="clr-namespace:MapaGeoLocal"
+             x:Class="MapaGeoLocal.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+        <Label Text="Latitud: " FontAttributes="Bold" FontSize="25"></Label>
+        <Label x:Name="Latitud" Text="{}" FontSize="25"></Label>
+        <Label Text="Longitud: " FontAttributes="Bold" FontSize="25"></Label>
+        <Label x:Name="Longitud" Text="{}" FontSize="25"></Label>
+        <Label Text="Altimetria: " FontAttributes="Bold" FontSize="25"></Label>
+        <Label x:Name="Altimetria" Text="{}" FontSize="25"></Label>
+
+        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+            <Maps:Map x:Name="MiMapa" HeightRequest="700" WidthRequest="400"  
+                  MapType="Street"></Maps:Map>
+        </StackLayout>
+        
+
+    </StackLayout>
+
+</ContentPage>
