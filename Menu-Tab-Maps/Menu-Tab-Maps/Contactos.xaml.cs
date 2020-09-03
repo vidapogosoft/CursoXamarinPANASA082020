@@ -9,6 +9,9 @@ using Xamarin.Forms.Xaml;
 
 using Xamarin.Essentials;
 
+using Xamarin.Forms.OpenWhatsApp;
+
+
 namespace Menu_Tab_Maps
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
@@ -33,9 +36,17 @@ namespace Menu_Tab_Maps
             PhoneDialer.Open("046004000");
         }
 
-        private async void BtnSMS_Clicked(object sender, EventArgs e)
+        private void BtnSMS_Clicked(object sender, EventArgs e)
         {
-            await Sms.ComposeAsync(new SmsMessage("SMS Curso SINERGIASS de XAMARIN", "0960574445"));
+            //await Sms.ComposeAsync(new SmsMessage("SMS Curso SINERGIASS de XAMARIN", "0960574445"));
+
+            //Envio de mensaje de wassap
+
+            Chat.Open("+593960574445", "Nuevo Pedido Generado\n"
+                + "Fecha y Hora: \n" + DateTime.Now.ToString() + "\n"
+                );
+
+
         }
 
         private async void BtnEmail_Clicked(object sender, EventArgs e)

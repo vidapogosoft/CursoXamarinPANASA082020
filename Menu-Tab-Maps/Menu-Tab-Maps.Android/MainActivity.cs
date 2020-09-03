@@ -27,7 +27,7 @@ namespace Menu_Tab_Maps.Droid
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
 
             //Plugin de notificaciones
-            LocalNotificationsImplementation.NotificationIconId = Resource.Mipmap.launcher_foreground;
+            LocalNotificationsImplementation.NotificationIconId = Resource.Mipmap.icon;
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
