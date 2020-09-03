@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Menu_Tab_Maps.Home"
+             Title="Home">
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+
+            <StackLayout Spacing="15" Padding="5">
+                <Label Text="Tiendas/Markets" FontSize="18"></Label>
+                <CollectionView x:Name="CLTiendas" HeightRequest="250" SelectionMode="Single"
+                                SelectionChanged="CLTiendas_SelectionChanged">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" ItemSpacing="0"></LinearItemsLayout>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout HorizontalOptions="Start" Spacing="0">
+                                <Frame CornerRadius="10">
+                                    <StackLayout HorizontalOptions="Start">
+                                        <Image HeightRequest="200" WidthRequest="200"
+                                               Source="{Binding ImageUrl}"></Image>
+                                        <Label Text="{Binding Name}"
+                                               FontAttributes="Bold" FontSize="16"></Label>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                    
+                </CollectionView>
+            </StackLayout>
+            
+        </StackLayout>
+        
+    </ScrollView>
+    
+</ContentPage>

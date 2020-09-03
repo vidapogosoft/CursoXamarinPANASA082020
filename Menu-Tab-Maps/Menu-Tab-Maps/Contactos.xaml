@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Menu_Tab_Maps.Contactos"
+             Title="Contactos">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="CenterAndExpand">
+
+                <Frame>
+                    <StackLayout>
+                        <Label x:Name="DeviceInfor"></Label>
+                        <Label x:Name="DeviceVersion"></Label>
+                        <Label x:Name="DeviceName"></Label>
+                        <Label x:Name="DeviceManuf"></Label>
+
+                        <Button Text="Llamanos  046004000" BackgroundColor="Transparent" 
+                        x:Name="BtnCall" Clicked="BtnCall_Clicked"></Button>
+                        <Button Text="Envianos un SMS  0960574445" BackgroundColor="Transparent" 
+                        x:Name="BtnSMS" Clicked="BtnSMS_Clicked"></Button>
+                        <Button Text="Email  vidapogosoft@gmail.com" 
+                        BackgroundColor="Transparent" 
+                        x:Name="BtnEmail" Clicked="BtnEmail_Clicked"></Button>
+                    </StackLayout>
+                    
+                </Frame>
+                
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

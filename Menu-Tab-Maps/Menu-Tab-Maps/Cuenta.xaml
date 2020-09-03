@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:Map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             mc:Ignorable="d"
+             x:Class="Menu_Tab_Maps.Cuenta">
+
+    <ContentPage Title="Mis Datos">
+
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            </ContentPage.Content>
+        
+    </ContentPage>
+
+
+    <ContentPage Title="Mi Foto">
+
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+
+    </ContentPage>
+
+    <ContentPage Title="Mi Docimicilio">
+
+        <ContentPage.Content>
+
+            <ScrollView>
+                <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                    <Label Text="Latitud: "/>
+                    <Label x:Name="LblLatitud" Text=""/>
+                    <Label Text="Longitud: "/>
+                    <Label x:Name="LblLongitud" Text=""/>
+                    <Label Text="Altimetria: "/>
+                    <Label x:Name="LblAltimetria" Text=""/>
+
+                    <StackLayout>
+
+                        <Map:Map x:Name="GeoLocal" MapType="Satellite" HeightRequest="700" 
+                        WidthRequest="400"></Map:Map>
+
+                    </StackLayout>
+
+                </StackLayout>
+            </ScrollView>
+            
+        </ContentPage.Content>
+
+    </ContentPage>
+
+</TabbedPage>

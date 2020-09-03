@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Menu_Tab_Maps.MainPage"
+             Title="Home">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="menu" BackgroundColor="AliceBlue">
+            <StackLayout>
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="icon.png" HeightRequest="100" WidthRequest="100"></Image>
+                </StackLayout>
+                <ListView BackgroundColor="White" x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell Height="25" Text="{Binding MenuTitle}">
+                            </ImageCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    
+</MasterDetailPage>
