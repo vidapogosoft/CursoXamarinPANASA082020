@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://186.68.44.10:9090/asmxservices/TodoServices.asmx?wsdl" docRef="http://186.68.44.10:9090/asmxservices/TodoServices.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://186.68.44.10:9090/asmxservices/TodoServices.asmx" xmlns:q1="http://186.68.44.10:9090/" binding="q1:TodoServicesSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://186.68.44.10:9090/asmxservices/TodoServices.asmx" xmlns:q2="http://186.68.44.10:9090/" binding="q2:TodoServicesSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

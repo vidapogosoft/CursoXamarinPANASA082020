@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TodoASMX.Views.TodoItemPage">
+
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Name:"/>
+            <Entry Placeholder="Ingrese Item" Text="{Binding Path=Name}" ></Entry>
+            <Label Text="Notes: " ></Label>
+            <Entry Placeholder="Ingrese notas" Text="{Binding Path=Notes}" ></Entry>
+            <Label Text="Done: " ></Label>
+            <Switch IsToggled="{Binding Path=Done}"></Switch>
+            <Button Text="Save" BackgroundColor="Green" TextColor="White" ></Button>
+            <Button Text="Del" BackgroundColor="Red" TextColor="White"></Button>
+            <Button Text="Cancel" BackgroundColor="Orange" TextColor="White"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
