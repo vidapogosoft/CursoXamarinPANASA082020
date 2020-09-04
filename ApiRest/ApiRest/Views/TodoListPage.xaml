@@ -23,7 +23,7 @@
                                 <StackLayout Padding="20,0,0,0" HorizontalOptions="StartAndExpand"
                                              Orientation="Horizontal">
                                     <Label Text="{Binding Name}"></Label>
-                                    <Label Text="{Binding Name}"></Label>
+                                    <Label Text="{Binding Notes}"></Label>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
