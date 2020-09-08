@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Camara1.MainPage"
+             BackgroundColor="Aquamarine">
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical" Spacing="6" Margin="10">
+
+            <Frame BorderColor="Black" CornerRadius="20" HasShadow="True">
+                <StackLayout>
+                    <Image HeightRequest="150" WidthRequest="150" Source="icon.png" x:Name="MainImage"></Image>
+                    <Label TextColor="Blue" FontSize="14" x:Name="Path"></Label>
+                </StackLayout>
+            </Frame>
+
+
+            <Frame BorderColor="Black" CornerRadius="20" HasShadow="True">
+                <StackLayout>
+                    <Button Text="Tomar Foto" BackgroundColor="Navy" TextColor="White"
+                            x:Name="BtnTomaFoto" Clicked="BtnTomaFoto_Clicked"></Button>
+                    <Button Text="Subir Foto" BackgroundColor="OrangeRed" TextColor="White"
+                            x:Name="BtnSubeFoto" Clicked="BtnSubeFoto_Clicked"></Button>
+                    <Button Text="Grabar Video" BackgroundColor="DarkGreen" TextColor="White"
+                            x:Name="BtnGrabaVideo" Clicked="BtnGrabaVideo_Clicked"></Button>
+                    <Button Text="Subir Video" BackgroundColor="DarkGoldenrod" TextColor="White"
+                            x:Name="BtnSubeVideo" Clicked="BtnSubeVideo_Clicked"></Button>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
